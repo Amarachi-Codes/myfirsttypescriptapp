@@ -15,3 +15,26 @@ function stateOfOrigin(arr) {
     }
 }
 stateOfOrigin(["abia", "anambra", "imo", "delta", "lagos"]);
+const customer1 = {
+    firstname: "Doris",
+    lastname: "Amarachi",
+    amount: 123000,
+    gender: "female" /* GENDER.FEMALE */,
+    recieptno: 546889,
+};
+const customer2 = {
+    firstname: "Daniel",
+    lastname: "Egele",
+    amount: 183000,
+    gender: "male" /* GENDER.MALE */,
+    recieptno: 549677,
+};
+function displayCustomerInfo(users) {
+    if (users.recieptno !== undefined) {
+        return 'Thank you ${users.firstname} ${users.lastname} for your patronage';
+    }
+    return 'invalid customer details';
+}
+let user1 = displayCustomerInfo(customer1);
+let user2 = displayCustomerInfo(customer2);
+console.log(user1, user2);
