@@ -36,6 +36,13 @@ const customer3 = {
     gender: "male" /* GENDER.MALE */,
     recieptno: 458377,
 };
+const customer4 = {
+    firstname: "Igwilo",
+    lastname: "Stanley",
+    amount: 240000,
+    gender: "male" /* GENDER.MALE */,
+    recieptno: 375697,
+};
 function displayCustomerInfo(users) {
     if (users.recieptno !== undefined) {
         return `Thank you ${users.firstname} ${users.lastname} for your patronage`;
@@ -45,6 +52,8 @@ function displayCustomerInfo(users) {
 let user1 = displayCustomerInfo(customer1);
 let user2 = displayCustomerInfo(customer2);
 let user3 = displayCustomerInfo(customer3);
+let user4 = displayCustomerInfo(customer4);
 console.log(user1);
 console.log(user2);
 console.log(user3);
+console.log(user4);

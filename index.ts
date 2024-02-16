@@ -50,6 +50,13 @@ const customer3: Customer = {
     gender: GENDER.MALE,
     recieptno: 458377,
 }
+const customer4: Customer = {
+    firstname: "Igwilo",
+    lastname: "Stanley",
+    amount: 240000,
+    gender: GENDER.MALE,
+    recieptno: 375697,
+}
 
 function displayCustomerInfo(users:Customer){
     if(users.recieptno !== undefined){
@@ -60,8 +67,11 @@ function displayCustomerInfo(users:Customer){
 let user1 = displayCustomerInfo(customer1);
 let user2 = displayCustomerInfo(customer2);
 let user3 = displayCustomerInfo(customer3);
+let user4 = displayCustomerInfo(customer4);
 console.log(user1);
 console.log(user2);
 console.log(user3);
+console.log(user4);
+
 
 
