@@ -29,12 +29,22 @@ const customer2 = {
     gender: "male" /* GENDER.MALE */,
     recieptno: 549677,
 };
+const customer3 = {
+    firstname: "Madueke",
+    lastname: "Kester",
+    amount: 200000,
+    gender: "male" /* GENDER.MALE */,
+    recieptno: 458377,
+};
 function displayCustomerInfo(users) {
     if (users.recieptno !== undefined) {
-        return 'Thank you ${users.firstname} ${users.lastname} for your patronage';
+        return `Thank you ${users.firstname} ${users.lastname} for your patronage`;
     }
     return 'invalid customer details';
 }
 let user1 = displayCustomerInfo(customer1);
 let user2 = displayCustomerInfo(customer2);
-console.log(user1, user2);
+let user3 = displayCustomerInfo(customer3);
+console.log(user1);
+console.log(user2);
+console.log(user3);
