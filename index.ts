@@ -23,4 +23,7 @@ stateOfOrigin(["abia","anambra","imo","delta","lagos"]);
 interface Customer{
 firstname: string;
 lastname:string;
+amount:number;
+gender: GENDER;
+recieptno:number;
 }
